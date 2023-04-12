@@ -53,6 +53,7 @@
 }
 .ex-11-icon {
     font-size: 60px;
+
 }
 .ex-12-button, .ex-13-button {
     position: relative;
@@ -142,3 +143,22 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes rotate2 {
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(270deg);
+    }
+}
+
+.ex-11-icon:hover{
+    animation-name: rotate2;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
