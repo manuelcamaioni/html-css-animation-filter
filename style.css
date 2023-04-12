@@ -166,3 +166,45 @@
     animation-timing-function: ease-in;
 }
 
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: navigate-bottom;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes navigate-bottom{
+
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+
+    100%{
+        right: 80%;
+        bottom: -10px;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: navigate-top;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes navigate-top{
+
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+
+    100%{
+        top: -10px;
+        left: 80%;
+    }
+}
