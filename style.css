@@ -9,6 +9,8 @@
     width: 100px;
     height: 100px;
     background: red;
+
+    transition: width 3s;
 }
 .ex-3-square {
     width: 100px;
@@ -73,4 +75,8 @@
 /* SOLUTIONS */
 .ex-1-square:hover{
     background-color: red;
+}
+
+.ex-2-square:active{
+    width: 100%;
 }
